@@ -1,5 +1,7 @@
 {% extends 'blog/base.html' %}
 
+{% block title %}Post_detail{% endblock %}
+
 {% block content %}
 <div class="post">
     {% if post.published_date %}
@@ -7,11 +9,11 @@
         {{ post.published_date }}
     </div>
     {% endif %}
-    {% if user.is_authenticated %}
     <a class="btn btn-default" href="{% url 'blog:post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-    {% endif %}
     <h1>{{ post.title }}</h1>
     <p>{{ post.text|linebreaksbr }}</p>
+    <td><a href="#" class="btn btn-danger btn-sm">Delete</a></td>
+
 </div>
 
 {% endblock %}

@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '%3w(u#862u(0ei57kiiw4t50-=fko1pvw=o5&73)1h9orzgm!0'
+SECRET_KEY = '3gw)s18du3uq=ws6@@oqxe!-$p(mz8tqza8gqlg$-6nz_-evgy'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -127,4 +127,3 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 )
-
